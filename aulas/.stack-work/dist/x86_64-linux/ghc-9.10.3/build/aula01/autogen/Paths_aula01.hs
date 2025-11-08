@@ -46,12 +46,12 @@ getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: 
 
 
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
-bindir     = "/home/davyusow/Projetos/Haskell/Estudos-Haskell/aula01/.stack-work/install/x86_64-linux/6f0379310bb822be762532598c70f0f22155ed8a7abc9a28f879f0665cf4aba6/9.10.3/bin"
-libdir     = "/home/davyusow/Projetos/Haskell/Estudos-Haskell/aula01/.stack-work/install/x86_64-linux/6f0379310bb822be762532598c70f0f22155ed8a7abc9a28f879f0665cf4aba6/9.10.3/lib/x86_64-linux-ghc-9.10.3-415c/aula01-0.1.0.0-FCuA8TOeGm24B3Qde29s26-aula01"
-dynlibdir  = "/home/davyusow/Projetos/Haskell/Estudos-Haskell/aula01/.stack-work/install/x86_64-linux/6f0379310bb822be762532598c70f0f22155ed8a7abc9a28f879f0665cf4aba6/9.10.3/lib/x86_64-linux-ghc-9.10.3-415c"
-datadir    = "/home/davyusow/Projetos/Haskell/Estudos-Haskell/aula01/.stack-work/install/x86_64-linux/6f0379310bb822be762532598c70f0f22155ed8a7abc9a28f879f0665cf4aba6/9.10.3/share/x86_64-linux-ghc-9.10.3-415c/aula01-0.1.0.0"
-libexecdir = "/home/davyusow/Projetos/Haskell/Estudos-Haskell/aula01/.stack-work/install/x86_64-linux/6f0379310bb822be762532598c70f0f22155ed8a7abc9a28f879f0665cf4aba6/9.10.3/libexec/x86_64-linux-ghc-9.10.3-415c/aula01-0.1.0.0"
-sysconfdir = "/home/davyusow/Projetos/Haskell/Estudos-Haskell/aula01/.stack-work/install/x86_64-linux/6f0379310bb822be762532598c70f0f22155ed8a7abc9a28f879f0665cf4aba6/9.10.3/etc"
+bindir     = "/home/davyusow/Projetos/Haskell/Estudos-Haskell/aulas/.stack-work/install/x86_64-linux/6f0379310bb822be762532598c70f0f22155ed8a7abc9a28f879f0665cf4aba6/9.10.3/bin"
+libdir     = "/home/davyusow/Projetos/Haskell/Estudos-Haskell/aulas/.stack-work/install/x86_64-linux/6f0379310bb822be762532598c70f0f22155ed8a7abc9a28f879f0665cf4aba6/9.10.3/lib/x86_64-linux-ghc-9.10.3-415c/aula01-0.1.0.0-FCuA8TOeGm24B3Qde29s26-aula01"
+dynlibdir  = "/home/davyusow/Projetos/Haskell/Estudos-Haskell/aulas/.stack-work/install/x86_64-linux/6f0379310bb822be762532598c70f0f22155ed8a7abc9a28f879f0665cf4aba6/9.10.3/lib/x86_64-linux-ghc-9.10.3-415c"
+datadir    = "/home/davyusow/Projetos/Haskell/Estudos-Haskell/aulas/.stack-work/install/x86_64-linux/6f0379310bb822be762532598c70f0f22155ed8a7abc9a28f879f0665cf4aba6/9.10.3/share/x86_64-linux-ghc-9.10.3-415c/aula01-0.1.0.0"
+libexecdir = "/home/davyusow/Projetos/Haskell/Estudos-Haskell/aulas/.stack-work/install/x86_64-linux/6f0379310bb822be762532598c70f0f22155ed8a7abc9a28f879f0665cf4aba6/9.10.3/libexec/x86_64-linux-ghc-9.10.3-415c/aula01-0.1.0.0"
+sysconfdir = "/home/davyusow/Projetos/Haskell/Estudos-Haskell/aulas/.stack-work/install/x86_64-linux/6f0379310bb822be762532598c70f0f22155ed8a7abc9a28f879f0665cf4aba6/9.10.3/etc"
 
 getBinDir     = catchIO (getEnv "aula01_bindir")     (\_ -> return bindir)
 getLibDir     = catchIO (getEnv "aula01_libdir")     (\_ -> return libdir)
