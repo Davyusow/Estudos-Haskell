@@ -26,6 +26,19 @@ h (x:y:z:[]) = 3*x*y*z
 h (x:_:_:w:[]) = 4+x+w
 h (x:xs) = x
 
+data Pessoa = Fisica String Int | Juridica String
+
+teste :: Pessoa -> (String, String)
+teste (Fisica x y) = ("Nome: " ++ x, "Idade:" ++ show y)
+teste (Juridica x) = ("Nome: " ++ x, "Não há idade")
+
+newtype Dado = Dado Int -- Semelhante ao typedef em 'C', podendo dar apelidos para um tipo
+
+--data Ponto = Ponto Double Double
+data Ponto = Ponto {xval,yval :: Double}
+
+
+
 main :: IO ()
 main = do
   putStrLn "adsad"
